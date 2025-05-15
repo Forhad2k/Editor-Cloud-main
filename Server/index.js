@@ -25,7 +25,7 @@ async function run() {
     await client.connect();
 
     // Define the /clientdata route after ensuring the client is connected
-    app.post('/clientdata', async (req, res) => {
+    app.post('/', async (req, res) => {
       const clientdata = req.body;
         console.log(clientdata);
       try {
